@@ -1,7 +1,6 @@
 import random
 
 def main():
-  import random
 	enemyHP = 100
 	hero = input("what is your mighty and powerful call? ")
 	print("greetings,",hero,".")
@@ -14,6 +13,7 @@ def magic():
 		##not sure if I even need a dict here.  could just be a bunch of if/elifs?
 
 def items():
+	
 
 
 def battleMenu():
