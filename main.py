@@ -22,8 +22,11 @@ def main():
 		monsterChoice = random.choice(monsters_level_oh)
 	else:
 		print("ERROR")
-	while currentHP >= 0:
+	while currentMonsterHP >= 0:
 		battleMenu()
+		## take some amt from currentmonsterhp
+		## also gotta have some module for the monster hitting
+		random.randint()
 
 def battleMenu():
 	menuChoice = input("do you want to hit via (m)elee, cast a (s)pell, or use an (i)tem?")
@@ -46,6 +49,10 @@ def magic(monster):
 		currentHP = monsterHP
 		while currentHP >= 0:
 			print("you cast",spell,"on",monster".")
+
+
+
+
 
 def items():
 	itemDict = dict()
