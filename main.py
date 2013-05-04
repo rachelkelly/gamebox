@@ -8,25 +8,56 @@ from monsterlist.py import *
 def main():
 	global hero = input("what is your mighty and powerful call? ")
 	print("greetings,",hero,".")
-	print("\nYou encounter a",monster,"!")
-	##need to define monster var somewhere
 	if heroLevel > 40:
 		monsterChoice = random.choice(monsters_level_four)
+		if monsterChoice == bigboss:
+			bigboss()
+		elif monsterChoice == captainpantalon:
+			captainpantalon()
+		elif monsterChoice == sbvd:
+			sbvd()
+		else:
+			# ????
 	elif heroLevel > 30:
 		monsterChoice = random.choice(monsters_level_three)
+		if monsterChoice == yeti:
+			yeti()
+		elif monsterChoice == menacingvuvuzuela:
+			menacingvuvuzuela()
+		elif monsterChoice == orthoblap:
+			orthoblap()
 	elif heroLevel > 20:
 		monsterChoice = random.choice(monsters_level_two)
+		if monsterChoice == talkingyurt:
+			talkingyurt()
+		elif monsterChoice == bear:
+			bear()
+		elif monsterChoice == badwombat:
+			badwombat()
 	elif heroLevel > 10:
 		monsterChoice = random.choice(monsters_level_one)
+		if monsterChoice == squirrel:
+			squirrel()
+		elif monsterChoice == kindorc:
+			kindorc()
+		elif monsterChoice == bagodicks:
+			bagodicks()
 	elif heroLevel >= 1:
 		monsterChoice = random.choice(monsters_level_oh)
+		if monsterChoice == grue:
+			grue()
+		elif monsterChoice == babybadger:
+			babybadger()
+		elif monsterChoice == tinybutt:
+			tinybutt()
 	else:
 		print("ERROR")
+	print("\nYou encounter a",monster,"!")
 	while currentMonsterHP >= 0:
-		battleMenu()
+		battleMenu(monsterChoice)
 		## take some amt from currentmonsterhp
 		## also gotta have some module for the monster hitting
-		random.randint()
+		random.randint() #??
 
 def battleMenu():
 	menuChoice = input("do you want to hit via (m)elee, cast a (s)pell, or use an (i)tem?")
@@ -49,6 +80,7 @@ def magic(monster):
 		currentHP = monsterHP
 		while currentHP >= 0:
 			print("you cast",spell,"on",monster".")
+
 
 
 
