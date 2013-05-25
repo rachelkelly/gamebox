@@ -9,6 +9,8 @@ def main():
 	global hero = input("what is your mighty and powerful call? ")
 	print("greetings,",hero,".")
 	if heroLevel > 40:
+	## can also be based on location, ie, #if location = megaswamp: etc etc.
+	## location obviously far more appropriate for an eventual game
 		monsterChoice = random.choice(monsters_level_four)
 		if monsterChoice == bigboss:
 			bigboss()
