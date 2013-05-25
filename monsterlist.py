@@ -16,6 +16,8 @@ def tinybutt():
 	monsterMP = 100
 	melee1 = print("guess what\n\n\n\n\nfaaaaaaaaaart")
 
+def squirrel():
+	monsterHP =  
 
 
 def monster_type():
